@@ -1,0 +1,24 @@
+[package]
+name = "numora"
+version = "0.1.0"
+edition = "2024"
+description = "A small numerical lab: matrices, statistics and a MATLAB-style expression language with an interactive shell."
+license = "MIT"
+authors = ["Abhishek Ranjan"]
+repository = "https://github.com/abhisheksava32/numora"
+readme = "README.md"
+keywords = ["matrix", "linear-algebra", "statistics", "repl", "calculator"]
+categories = ["mathematics", "science", "command-line-utilities"]
+
+[lib]
+name = "numora"
+path = "src/lib.rs"
+
+[[bin]]
+name = "numora"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+lto = true
